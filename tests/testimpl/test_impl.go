@@ -11,7 +11,7 @@ import (
 	"github.com/Azure/azure-sdk-for-go/sdk/azidentity"
 	"github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/network/armnetwork/v5"
 	"github.com/gruntwork-io/terratest/modules/terraform"
-	"github.com/nexient-llc/lcaf-component-terratest-common/types"
+	"github.com/launchbynttdata/lcaf-component-terratest/types"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,4 +1,4 @@
-module github.com/nexient-llc/tf-azurerm-module_primitive-vnet_peering
+module github.com/launchbynttdata/tf-azurerm-module_primitive-vnet_peering
 
 go 1.20
 
@@ -7,7 +7,7 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.4.0
 	github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/network/armnetwork/v5 v5.0.0
 	github.com/gruntwork-io/terratest v0.43.12
-	github.com/nexient-llc/lcaf-component-terratest-common v1.0.1
+	github.com/launchbynttdata/lcaf-component-terratest v1.0.1
 	github.com/stretchr/testify v1.8.4
 )
 
