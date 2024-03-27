@@ -25,7 +25,7 @@ func TestVnetPeering(t *testing.T, testContext types.TestContext) {
 	for k := range peeringNames {
 		keys = append(keys, k)
 	}
-	subscriptionId := os.Getenv("AZURE_SUBSCRIPTION_ID")
+	subscriptionId := os.Getenv("ARM_SUBSCRIPTION_ID")
 	credential, err := azidentity.NewDefaultAzureCredential(nil)
 	if err != nil {
 		t.Fatalf("Unable to get credentials: %e\n", err)
