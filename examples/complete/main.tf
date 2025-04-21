@@ -36,7 +36,7 @@ module "resource_group" {
 
 module "vnets" {
   source  = "terraform.registry.launch.nttdata.com/module_collection/virtual_network/azurerm"
-  version = "~> 1.0"
+  version = "~> 1.1.0"
 
   network_map = { for name, vnet in var.network_map : name => merge(vnet, {
     resource_group_name = module.resource_names["resource_group"].standard
