@@ -14,10 +14,10 @@ This example creates two Virtual Networks in the same Resource Group and then cr
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_resource_group"></a> [resource\_group](#module\_resource\_group) | terraform.registry.launch.nttdata.com/module_primitive/resource_group/azurerm | ~> 1.0 |
+| <a name="module_resource_group"></a> [resource\_group](#module\_resource\_group) | terraform.registry.launch.nttdata.com/module_primitive/resource_group/azurerm | ~> 1.2 |
 | <a name="module_resource_names"></a> [resource\_names](#module\_resource\_names) | terraform.registry.launch.nttdata.com/module_library/resource_name/launch | ~> 2.0 |
 | <a name="module_vnet_peerings"></a> [vnet\_peerings](#module\_vnet\_peerings) | ../.. | n/a |
-| <a name="module_vnets"></a> [vnets](#module\_vnets) | terraform.registry.launch.nttdata.com/module_collection/virtual_network/azurerm | ~> 1.1.0 |
+| <a name="module_vnets"></a> [vnets](#module\_vnets) | terraform.registry.launch.nttdata.com/module_collection/virtual_network/azurerm | ~> 1.2 |
 
 ## Resources
 
