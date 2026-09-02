@@ -6,7 +6,7 @@ network_map = {
     vnet_name     = "vnet-test-800"
     address_space = ["10.10.0.0/16"]
     subnets = {
-      subnet-1 = {
+      vnet1-subnet-1 = {
         prefix = "10.10.0.0/24"
       }
     }
@@ -19,7 +19,7 @@ network_map = {
     vnet_name     = "vnet-test-801"
     address_space = ["10.11.0.0/16"]
     subnets = {
-      subnet-1 = {
+      vnet2-subnet-1 = {
         prefix = "10.11.0.0/24"
       }
     }

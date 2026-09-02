@@ -12,7 +12,7 @@
 
 module "resource_names" {
   source  = "terraform.registry.launch.nttdata.com/module_library/resource_name/launch"
-  version = "~> 1.0"
+  version = "~> 2.0"
 
   for_each = var.resource_names_map
 
@@ -28,7 +28,7 @@ module "resource_names" {
 
 module "resource_group" {
   source   = "terraform.registry.launch.nttdata.com/module_primitive/resource_group/azurerm"
-  version  = "~> 1.0"
+  version  = "~> 1.2"
   name     = module.resource_names["resource_group"].standard
   location = var.resource_names_map["resource_group"].region
   tags     = merge(var.tags, { resource_name = module.resource_names["resource_group"].standard })
@@ -36,7 +36,7 @@ module "resource_group" {
 
 module "vnets" {
   source  = "terraform.registry.launch.nttdata.com/module_collection/virtual_network/azurerm"
-  version = "~> 1.1.0"
+  version = "~> 1.2"
 
   network_map = { for name, vnet in var.network_map : name => merge(vnet, {
     resource_group_name = module.resource_names["resource_group"].standard
