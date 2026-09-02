@@ -16,9 +16,9 @@ import (
 )
 
 func TestVnetPeering(t *testing.T, testContext types.TestContext) {
-	rgName := terraform.Output(t, testContext.TerratestTerraformOptions(), "resource_group_name")
-	vnetNames := terraform.OutputMap(t, testContext.TerratestTerraformOptions(), "vnet_names")
-	peeringNames := terraform.OutputMap(t, testContext.TerratestTerraformOptions(), "names")
+	rgName := terraform.OutputContext(t, context.Background(), testContext.TerratestTerraformOptions(), "resource_group_name")
+	vnetNames := terraform.OutputMapContext(t, context.Background(), testContext.TerratestTerraformOptions(), "vnet_names")
+	peeringNames := terraform.OutputMapContext(t, context.Background(), testContext.TerratestTerraformOptions(), "names")
 
 	keys := make([]string, 0, len(peeringNames))
 
